@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SurabayArt | Zahra Mufida</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <main>
+    <section class="page-top">
+      <div class="wrap">
+        <a href="projects.html">← Back to Projects</a>
+        <h1>SurabayArt</h1>
+        <p class="lead">
+          A ticketing platform for events and organizers.
+        </p>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:2rem">
+      <div class="wrap" style="max-width:850px">
+
+        <div class="actions" style="display:flex;gap:1rem;flex-wrap:wrap;margin-bottom:3rem">
+          <a class="btn solid"
+             href="https://github.com/reisatanzil/surabayaart"
+             target="_blank"
+             rel="noopener noreferrer">
+            GitHub Repository ↗
+          </a>
+        </div>
+
+        <h2>Overview</h2>
+        <p style="margin:1rem 0 2rem">
+          SurabayArt is a ticketing platform designed
+          to support event organizers with ticket
+          transactions, customer reviews, and
+          merchandise management.
+        </p>
+
+        <h2>Key Features</h2>
+        <ul style="margin:1rem 0 2rem;padding-left:1.5rem">
+          <li>Event ticket booking</li>
+          <li>Post-payment ticket flow</li>
+          <li>Customer reviews</li>
+          <li>Merchandise management</li>
+        </ul>
+
+        <h2>My Contribution</h2>
+        <p style="margin-top:1rem">
+          Conducted a usability audit of the ticket
+          and payment flow using Nielsen's
+          usability heuristics.
+        </p>
+
+      </div>
+    </section>
+  </main>
+
+</body>
+</html>
