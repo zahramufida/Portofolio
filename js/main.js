@@ -1,23 +1,43 @@
 
-// Mobile menu
+// ================================
+// MOBILE NAVIGATION
+// ================================
+
 const burger = document.querySelector('.burger');
 const menu = document.querySelector('.menu');
 
 if (burger && menu) {
   burger.addEventListener('click', () => {
     const open = menu.classList.toggle('open');
-    burger.setAttribute('aria-expanded', open);
+
+    burger.setAttribute(
+      'aria-expanded',
+      open
+    );
   });
 }
 
-// Project filter
-const buttons = document.querySelectorAll('.filters button');
-const cards = document.querySelectorAll('[data-cat]');
+
+// ================================
+// PROJECT FILTER
+// ================================
+
+const buttons = document.querySelectorAll(
+  '.filters button'
+);
+
+const cards = document.querySelectorAll(
+  '[data-cat]'
+);
 
 buttons.forEach(btn => {
   btn.addEventListener('click', () => {
+
     buttons.forEach(b => {
-      b.setAttribute('aria-pressed', b === btn);
+      b.setAttribute(
+        'aria-pressed',
+        b === btn
+      );
     });
 
     const filter = btn.dataset.filter;
@@ -28,8 +48,17 @@ buttons.forEach(btn => {
         card.dataset.cat.split(' ').includes(filter)
       );
     });
+
   });
 });
 
-// Contact form is handled by FormSubmit.
-// Do not prevent the default form submission.
+
+// ================================
+// CONTACT FORM
+// ================================
+
+// The contact form is submitted directly
+// to Formspree using its HTML action.
+//
+// No JavaScript submit handler is needed.
+// Do not use preventDefault() or mailto:.
